@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Design Challenge</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!--NAVIGATION BAR-->
+<div class="container head_foot">
+    <div class="row">
+     <div class="col-md-12">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+             <a class="navbar-brand" href="index.html" ><img src="assets/images/ml_brain_logo_smallR.png" height="40" class="mr-2">Final Project</a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+           
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ml-auto">
+                 <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Models
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                       <a class="dropdown-item" href="#">Model 1</a>
+                       <a class="dropdown-item" href="#">Model 2</a>
+                       <div class="dropdown-divider"></div>
+                       <a class="dropdown-item" href="#">Model 3</a>
+                       <a class="dropdown-item" href="#">Model 4</a>
+                     </div>
+                   </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="comp.html">Comparison</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="data.html">Data</a>
+                 </li>
+               </ul>
+             </div>
+           </nav>
+     </div>
+    </div>
+</div>
+
+<!--MAIN SECTION-->
+    <div class="container pt-4">
+        <div class="row">  
+            <div class="col-md-12">
+                <h1>Data</h1>
+                <hr>
+                <p>The following table below includes the first 20 rows of the data used for plotting during this project.
+                    For the entire file <a href="https://job-postings-dataviz.s3.amazonaws.com/fake_jobs_clean.csv" class="font-weight-bold" style="color:#30adc3">click here for AWS download.</a>
+                </p>
+                <p class="font-italic font-weight-light" style="color:grey">Table scrolls horizontally</p>
+
+                <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead class="themed-dark">
+                          <tr style="text-align: right;">
+                            <th>job_id</th>
+                            <th>city</th>
+                            <th>state/province</th>
+                            <th>country</th>
+                            <th>title</th>
+                            <th>department</th>
+                            <th>industry</th>
+                            <th>function</th>
+                            <th>salary_range</th>
+                            <th>salary_provided</th>
+                            <th>company_profile</th>
+                            <th>description</th>
+                            <th>requirements</th>
+                            <th>benefits</th>
+                            <th>benefits_provided</th>
+                            <th>telecommuting</th>
+                            <th>has_company_logo</th>
+                            <th>has_questions</th>
+                            <th>employment_type</th>
+                            <th>required_experience</th>
+                            <th>required_education</th>
+                            <th>fraudulent</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>New York</td>
+                            <td>NY</td>
+                            <td>US</td>
+                            <td>Marketing Intern</td>
+                            <td>Marketing</td>
+                            <td>NaN</td>
+                            <td>Marketing</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>We're Food52, and we've created a groundbreaki...</td>
+                            <td>Food52, a fast-growing, James Beard Award-winn...</td>
+                            <td>Experience with content management systems a m...</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>Other</td>
+                            <td>Internship</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Auckland</td>
+                            <td></td>
+                            <td>NZ</td>
+                            <td>Customer Service - Cloud Video Production</td>
+                            <td>Success</td>
+                            <td>Marketing and Advertising</td>
+                            <td>Customer Service</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>90 Seconds, the worlds Cloud Video Production ...</td>
+                            <td>Organised - Focused - Vibrant - Awesome!Do you...</td>
+                            <td>What we expect from you:Your key responsibilit...</td>
+                            <td>What you will get from usThrough being part of...</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>Full-time</td>
+                            <td>Not Applicable</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>Wever</td>
+                            <td>IA</td>
+                            <td>US</td>
+                            <td>Commissioning Machinery Assistant (CMA)</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>Valor Services provides Workforce Solutions th...</td>
+                            <td>Our client, located in Houston, is actively se...</td>
+                            <td>Implement pre-commissioning and commissioning ...</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>Washington</td>
+                            <td>DC</td>
+                            <td>US</td>
+                            <td>Account Executive - Washington DC</td>
+                            <td>Sales</td>
+                            <td>Computer Software</td>
+                            <td>Sales</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>Our passion for improving quality of life thro...</td>
+                            <td>THE COMPANY: ESRI – Environmental Systems Rese...</td>
+                            <td>EDUCATION: Bachelor’s or Master’s in GIS, busi...</td>
+                            <td>Our culture is anything but corporate—we have ...</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>Full-time</td>
+                            <td>Mid-Senior level</td>
+                            <td>Bachelor's Degree</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>Fort Worth</td>
+                            <td>FL</td>
+                            <td>US</td>
+                            <td>Bill Review Manager</td>
+                            <td>NaN</td>
+                            <td>Hospital &amp; Health Care</td>
+                            <td>Health Care Provider</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>SpotSource Solutions LLC is a Global Human Cap...</td>
+                            <td>JOB TITLE: Itemization Review ManagerLOCATION:...</td>
+                            <td>QUALIFICATIONS:RN license in the State of Texa...</td>
+                            <td>Full Benefits Offered</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>Full-time</td>
+                            <td>Mid-Senior level</td>
+                            <td>Bachelor's Degree</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td></td>
+                            <td>MD</td>
+                            <td>US</td>
+                            <td>Accounting Clerk</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>NaN</td>
+                            <td>Job OverviewApex is an environmental consultin...</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>7</td>
+                            <td>Berlin</td>
+                            <td>BE</td>
+                            <td>DE</td>
+                            <td>Head of Content (m/f)</td>
+                            <td>ANDROIDPIT</td>
+                            <td>Online Media</td>
+                            <td>Management</td>
+                            <td>20000-28000</td>
+                            <td>1</td>
+                            <td>Founded in 2009, the Fonpit AG rose with its i...</td>
+                            <td>Your Responsibilities: Manage the English-spea...</td>
+                            <td>Your Know-How:                                ...</td>
+                            <td>Your Benefits: Being part of a fast-growing co...</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>Full-time</td>
+                            <td>Mid-Senior level</td>
+                            <td>Master's Degree</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>8</td>
+                            <td>San Francisco</td>
+                            <td>CA</td>
+                            <td>US</td>
+                            <td>Lead Guest Service Specialist</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>Airenvy’s mission is to provide lucrative yet ...</td>
+                            <td>Who is Airenvy?Hey there! We are seasoned entr...</td>
+                            <td>Experience with CRM software, live chat, and p...</td>
+                            <td>Competitive Pay. You'll be able to eat steak e...</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>9</td>
+                            <td>Pensacola</td>
+                            <td>FL</td>
+                            <td>US</td>
+                            <td>HP BSM SME</td>
+                            <td>NaN</td>
+                            <td>Information Technology and Services</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>Solutions3 is a woman-owned small business who...</td>
+                            <td>Implementation/Configuration/Testing/Training ...</td>
+                            <td>MUST BE A US CITIZEN.An active TS/SCI clearanc...</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>Full-time</td>
+                            <td>Associate</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>10</td>
+                            <td>Phoenix</td>
+                            <td>AZ</td>
+                            <td>US</td>
+                            <td>Customer Service Associate - Part Time</td>
+                            <td>NaN</td>
+                            <td>Financial Services</td>
+                            <td>Customer Service</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>Novitex Enterprise Solutions, formerly Pitney ...</td>
+                            <td>The Customer Service Associate will be based i...</td>
+                            <td>Minimum Requirements:Minimum of 6 months custo...</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>Part-time</td>
+                            <td>Entry level</td>
+                            <td>High School or equivalent</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>11</td>
+                            <td>Jersey City</td>
+                            <td>NJ</td>
+                            <td>US</td>
+                            <td>ASP.net Developer Job opportunity at United St...</td>
+                            <td>NaN</td>
+                            <td>Information Technology and Services</td>
+                            <td>Information Technology</td>
+                            <td>100000-120000</td>
+                            <td>1</td>
+                            <td>NaN</td>
+                            <td>Position : #URL_86fd830a95a64e2b30ceed829e63fd...</td>
+                            <td>Position : #URL_86fd830a95a64e2b30ceed829e63fd...</td>
+                            <td>Benefits - FullBonus Eligible - YesInterview T...</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>Full-time</td>
+                            <td>Mid-Senior level</td>
+                            <td>Bachelor's Degree</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>12</td>
+                            <td>London</td>
+                            <td>LND</td>
+                            <td>GB</td>
+                            <td>Talent Sourcer (6 months fixed-term contract)</td>
+                            <td>HR</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>Want to build a 21st century financial service...</td>
+                            <td>TransferWise is the clever new way to move mon...</td>
+                            <td>We’re looking for someone who:Proven track rec...</td>
+                            <td>You will join one of Europe’s most hotly tippe...</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>13</td>
+                            <td>Stamford</td>
+                            <td>CT</td>
+                            <td>US</td>
+                            <td>Applications Developer, Digital</td>
+                            <td>NaN</td>
+                            <td>Management Consulting</td>
+                            <td>Information Technology</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>Novitex Enterprise Solutions, formerly Pitney ...</td>
+                            <td>The Applications Developer, Digital will devel...</td>
+                            <td>Requirements:4 – 5 years’ experience in develo...</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>Full-time</td>
+                            <td>Associate</td>
+                            <td>Bachelor's Degree</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>14</td>
+                            <td>Orlando</td>
+                            <td>FL</td>
+                            <td>US</td>
+                            <td>Installers</td>
+                            <td>NaN</td>
+                            <td>Events Services</td>
+                            <td>Other</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>Growing event production company providing sta...</td>
+                            <td>Event Industry Installers Needed!! (Orlando, F...</td>
+                            <td>Valid driver's license,Somewhat Clean driving ...</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>Full-time</td>
+                            <td>Not Applicable</td>
+                            <td>Unspecified</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>15</td>
+                            <td>Sydney</td>
+                            <td>NSW</td>
+                            <td>AU</td>
+                            <td>Account Executive - Sydney</td>
+                            <td>Sales</td>
+                            <td>Internet</td>
+                            <td>Sales</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>Adthena is the UK’s leading competitive intell...</td>
+                            <td>Are you interested in a satisfying and financi...</td>
+                            <td>You’ll need to be smart and passionate and hav...</td>
+                            <td>In return we'll pay you well, give you some ow...</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>Full-time</td>
+                            <td>Associate</td>
+                            <td>Bachelor's Degree</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>16</td>
+                            <td>Singapore</td>
+                            <td>01</td>
+                            <td>SG</td>
+                            <td>VP of Sales - Vault Dragon</td>
+                            <td>Sales</td>
+                            <td>Facilities Services</td>
+                            <td>Sales</td>
+                            <td>120000-150000</td>
+                            <td>1</td>
+                            <td>Jungle Ventures is the leading Singapore based...</td>
+                            <td>About Vault Dragon Vault Dragon is Dropbox for...</td>
+                            <td>Key Superpowers3-5 years of high-pressure sale...</td>
+                            <td>Basic: SGD 120,000Equity negotiable for a rock...</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>Full-time</td>
+                            <td>Executive</td>
+                            <td>Bachelor's Degree</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>17</td>
+                            <td>Tel Aviv, Israel</td>
+                            <td></td>
+                            <td>IL</td>
+                            <td>Hands-On QA Leader</td>
+                            <td>R&amp;D</td>
+                            <td>Internet</td>
+                            <td>Engineering</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>At HoneyBook we’re re-imagining the events ind...</td>
+                            <td>We are looking for a Hands-On QA Leader for ou...</td>
+                            <td>Previous experience in client &amp;amp; server tes...</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>Full-time</td>
+                            <td>Mid-Senior level</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>18</td>
+                            <td>Southend-on-Sea</td>
+                            <td>SOS</td>
+                            <td>GB</td>
+                            <td>Southend-on-Sea Traineeships Under NAS 16-18 Y...</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>Established on the principles that full time e...</td>
+                            <td>Government funding is only available for 16-18...</td>
+                            <td>16-18 year olds only due to government funding...</td>
+                            <td>Career prospects.</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>19</td>
+                            <td>New York</td>
+                            <td>NY</td>
+                            <td>US</td>
+                            <td>Visual Designer</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>Kettle is an independent digital agency based ...</td>
+                            <td>Kettle is hiring a Visual Designer!Job Locatio...</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>20</td>
+                            <td>USA Northeast</td>
+                            <td>PA</td>
+                            <td>US</td>
+                            <td>Process Controls Engineer - DCS PLC MS Office ...</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>We Provide Full Time Permanent Positions for m...</td>
+                            <td>Experienced Process Controls Engineer is requi...</td>
+                            <td>Must have 5 or more years of experience with D...</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>Full-time</td>
+                            <td>NaN</td>
+                            <td>NaN</td>
+                            <td>0</td>
+                          </tr>
+            
+                        </tbody>
+                      </table>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+<!--FOOTER-->
+<div class = "footer">    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+                <div class="row">
+                    <p class="text-muted pl-3">Made by Marina Marinkovic, Julia O'Brien, & Ashley Dodge</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
