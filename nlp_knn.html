@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Design Challenge</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!--NAVIGATION BAR-->
+<div class="container head_foot">
+    <div class="row">
+     <div class="col-md-12">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+             <a class="navbar-brand" href="index.html" ><img src="assets/images/ml_brain_logo_smallR.png" height="40" class="mr-2">Final Project</a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+           
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ml-auto">
+                 <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Models
+                     </a>
+
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                       <div class="font-weight-bold ml-2" style="color:#248192">NLP</div>
+                        <a class="dropdown-item" href="nlp_knn.html">K Nearest Neighbors</a>
+                        <a class="dropdown-item" href="#">Model 2</a>
+
+                       <div class="dropdown-divider"></div>
+
+                       <div class="font-weight-bold ml-2" style="color:#248192">ML</div>
+                        <a class="dropdown-item" href="#">Model 3</a>
+                        <a class="dropdown-item" href="#">Model 4</a>
+                     </div>
+                   </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="comp.html">Comparison</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="data.html">Data</a>
+                 </li>
+               </ul>
+             </div>
+           </nav>
+     </div>
+    </div>
+  </div>
+
+<!--MAIN SECTION-->
+    <div class="container pt-4">
+        <div class="row">  
+      <!--LEFT MAIN SECTION-->
+                <div class="col-md-8">
+                    <h2>K Nearest Neighbors</h2>
+                    <hr>
+                    <div class="float-left">
+                        <img src="assets/images/knn2_sampleratio_plot.png" 
+                        alt="knn sample ratio" height="250">
+                    </div>
+                    
+                    <p><strong>What Is k-NN?</strong> In pattern recognition, the k-nearest neighbors algorithm (k-NN) is a non-parametric method used for classification and regression. 
+                      In both cases, the input consists of the k closest training examples in the feature space.
+                      <a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm" style="color:#248192">[Wikipedia]</a>
+                    </p>
+
+                    <p><strong>Train Time:</strong> </br>0.0022668838500976562 nanoseconds</p>
+
+                    <p><strong>Findings:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu euismod quam. Praesent ex risus, 
+                      placerat et accumsan ac, luctus in massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                      Etiam at varius arcu. Mauris sollicitudin, arcu ac suscipit ultricies, neque magna imperdiet dui, et vestibulum 
+                      sapien nunc nec enim. Nulla accumsan vel ipsum et pellentesque. Fusce iaculis rutrum pharetra. Nulla eu erat enim. 
+                      Etiam sit amet fringilla odio. Sed rhoncus nisl sed lorem scelerisque, in feugiat quam ullamcorper. 
+                      Duis commodo venenatis dui, vitae laoreet nulla ornare eget. Ut faucibus lorem eu orci tempus, ut tristique justo 
+                      posuere.
+                        Etiam eu lorem metus. Vivamus non mollis lectus. Etiam porta ultricies elit sit amet condimentum. Fusce aliquet 
+                        mi et magna aliquet lobortis. Nunc fringilla malesuada varius. Donec justo lectus, porttitor a blandit sed, tincidunt 
+                        id lacus. Praesent blandit arcu non arcu pretium venenatis id vestibulum nulla. Duis eleifend lorem id feugiat 
+                        venenatis. Praes
+                    </p>
+                    
+                </div>
+        
+    <!--RIGHT MAIN SECTION-->
+                <div class="col-md-4"> 
+                    <h2>Additional Models</h2>
+                    <hr>
+                <!--Model 1-->
+                <a href="##">
+                    <img src="assets/images/ml_brain.png"
+                        alt="##" Title= "##" height="175" width="175" class="figure-img img-fluid p-1 float-left"/>      
+                </a>
+
+                <!--Model 2-->
+                    <a href="##">
+                        <img src="assets/images/ml_brain.png"
+                            alt="##" Title= "##" height="175" width="175" class="figure-img img-fluid p-1 float-left"/>      
+                    </a>
+                
+                <!--Model 3-->
+                <a href="##">
+                    <img src="assets/images/ml_brain.png"
+                        alt="##" Title= "##" height="175" width="175" class="figure-img img-fluid p-1 float-left"/>      
+                </a>
+
+                <!--Model 4-->
+                <a href="##">
+                    <img src="assets/images/ml_brain.png"
+                        alt="##" Title= "##" height="175" width="175" class="figure-img img-fluid p-1 float-left"/>      
+                </a>
+ 
+                </div>
+
+        </div>
+    </div>
+
+
+<!--FOOTER-->
+<div class = "footer">    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+                <div class="row">
+                    <p class="text-muted pl-3"><small>Made by Marina Marinkovic, Julia O'Brien, & Ashley Dodge</small></p>
+                    <a href="https://github.com/MPdeM/Final_Project" class="ml-auto pr-3">
+                    <img src="assets/images/github_logo.png"
+                    alt="Github Icon" Title= "Github Project Repository" height="20"/> 
+                    </a>     
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
