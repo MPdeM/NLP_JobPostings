@@ -1,0 +1,43 @@
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='DarkGray' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='DarkGray' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-indicators li {
+    background-color: #999;
+  }
+  
+.carousel-indicators .active {
+    background-color: #51b4c5;
+  }
+
+  /* h3 {
+      color: #248193;
+  } */
+
+  h4 {
+      padding-top: 10px;
+      color: #248193;
+  }
+
+  tr {
+      text-align: right;
+  }
+
+  .carousel-item {
+    height: 300px;
+}
+
+.carousel-indicators {
+    bottom: -25px;
+}
+
+.carousel {
+    margin-bottom: 35px;;
+}
+
+  /* Darker blue #248193 */
+  /* Lighter blue #51b4c5 */

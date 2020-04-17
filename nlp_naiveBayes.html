@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fraudulent Job Posts</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+<!--NAVIGATION BAR-->
+<div class="container head_foot">
+    <div class="row">
+     <div class="col-md-12">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+             <a class="navbar-brand" href="index.html" ><img src="assets/images/ml_brain_logo_smallR.png" height="40" class="mr-2">Fraudulent Job Posts</a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+           
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ml-auto">
+                 <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Models
+                     </a>
+
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="font-weight-bold ml-2" style="color:#248192">NLP</div>
+                         <a class="dropdown-item" href="nlp_knn.html">K Nearest Neighbors</a>
+                         <a class="dropdown-item" href="nlp_svm.html">Support Vector Machine</a>
+                         <a class="dropdown-item" href="nlp_deepLearning.html">Deep Learning</a>
+                         <a class="dropdown-item" href="nlp_naiveBayes.html">Naive Bayes</a>
+                         <a class="dropdown-item" href="nlp_randomForest.html">Random Forest</a>
+   
+                        <div class="dropdown-divider"></div>
+   
+                        <div class="font-weight-bold ml-2" style="color:#248192">Non-Textual ML</div>
+                         <a class="dropdown-item" href="ml_knn.html">K Nearest Neighbors</a>
+                         <a class="dropdown-item" href="ml_svm.html">Support Vector Machine</a>
+                         <a class="dropdown-item" href="ml_randomForest.html">Random Forest</a>
+                      </div>
+
+                   </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="comp.html">Comparison</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="data.html">Data</a>
+                 </li>
+               </ul>
+             </div>
+           </nav>
+     </div>
+    </div>
+  </div>
+
+<!--MAIN SECTION-->
+    <div class="container pt-4">
+        <div class="row">  
+      <!--LEFT MAIN SECTION-->
+                <div class="col-md-8">
+                    <h2>NLP: Naive Bayes</h2>
+                    <hr>
+                    <p><strong>What Is Naive Bayes?</strong> e
+                        In machine learning, naïve Bayes classifiers are a family of simple "probabilistic classifiers" based on applying Bayes' 
+                        theorem with strong (naïve) independence assumptions between the features. They are among the simplest Bayesian network 
+                        models.[1] But they could be coupled with Kernel density estimation and achieve higher accuracy levels.
+                      <a href="https://en.wikipedia.org/wiki/Naive_Bayes_classifier" style="color:#248192">[Wikipedia]</a>
+                    </p>
+
+                    <hr>
+
+                    <h3>Multinomial Naive Bayes</h3>
+                    <!-- NB_MultinomialNBclassR_alldata.PNG -->
+                    <div alt="NB_MultinomialNBclassR_alldata.PNG">
+                        <h4>Classification Report: Multinomial Naive Bayes All Data</h4>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-sm">
+                            <thead class="themed-dark">
+                                    <tr>
+                                        <th></th>
+                                        <th>precision</th>
+                                        <th>recall</th>
+                                        <th>f1-score</th>
+                                        <th>support</th>
+                                    </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Real</strong></td>
+                                    <td>0.95</td>
+                                    <td>1.00</td>
+                                    <td>0.97</td>
+                                    <td>4254</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Fake</strong></td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>216</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><strong>Accuracy</strong></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>0.95</td>
+                                    <td>4470</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Macro Avg</strong></td>
+                                    <td>0.48</td>
+                                    <td>0.50</td>
+                                    <td>0.49</td>
+                                    <td>4470</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Weighted Avg</strong></td>
+                                    <td>0.91</td>
+                                    <td>0.95</td>
+                                    <td>0.93</td>
+                                    <td>4470</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                            </div>
+                    </div>
+
+                    <p><strong>Train Time:</strong> .... </p>
+
+                    <p><strong>Findings:</strong> ...... 
+                    </p>
+    
+                    <hr>
+
+                    <h3>Compliment Naive Bayes</h3>
+                    <!-- NB_ComplementNBclassR_alldata.PNG -->
+                    <div alt="NB_ComplementNBclassR_alldata.PNG">
+                        <h4>Classification Report: Complement Naive Bayes All Data</h4>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-sm">
+                            <thead class="themed-dark">
+                                    <tr>
+                                        <th></th>
+                                        <th>precision</th>
+                                        <th>recall</th>
+                                        <th>f1-score</th>
+                                        <th>support</th>
+                                    </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Real</strong></td>
+                                    <td>0.95</td>
+                                    <td>0.99</td>
+                                    <td>0.97</td>
+                                    <td>4254</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Fake</strong></td>
+                                    <td>0.11</td>
+                                    <td>0.01</td>
+                                    <td>0.02</td>
+                                    <td>216</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><strong>Accuracy</strong></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>0.95</td>
+                                    <td>4470</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Macro Avg</strong></td>
+                                    <td>0.53</td>
+                                    <td>0.50</td>
+                                    <td>0.50</td>
+                                    <td>4470</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Weighted Avg</strong></td>
+                                    <td>0.91</td>
+                                    <td>0.95</td>
+                                    <td>0.93</td>
+                                    <td>4470</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                        </div>
+
+                    <p><strong>Train Time:</strong> .... </p>
+
+                    <p><strong>Findings:</strong> ...... 
+                    </p>
+
+
+                </div>
+        
+    <!--RIGHT MAIN SECTION-->
+                <div class="col-md-4"> 
+                    <h2>Additional Models</h2>
+                    <hr>
+                <!--Model 1-->
+                <a href="##">
+                    <img src="assets/images/ml_brain.png"
+                        alt="##" Title= "##" height="175" width="175" class="figure-img img-fluid p-1 float-left"/>      
+                </a>
+
+                <!--Model 2-->
+                    <a href="##">
+                        <img src="assets/images/ml_brain.png"
+                            alt="##" Title= "##" height="175" width="175" class="figure-img img-fluid p-1 float-left"/>      
+                    </a>
+                
+                <!--Model 3-->
+                <a href="##">
+                    <img src="assets/images/ml_brain.png"
+                        alt="##" Title= "##" height="175" width="175" class="figure-img img-fluid p-1 float-left"/>      
+                </a>
+
+                <!--Model 4-->
+                <a href="##">
+                    <img src="assets/images/ml_brain.png"
+                        alt="##" Title= "##" height="175" width="175" class="figure-img img-fluid p-1 float-left"/>      
+                </a>
+ 
+                </div>
+
+        </div>
+    </div>
+
+
+<!--FOOTER-->
+<div class = "footer">    
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <hr>
+              <div class="row">
+
+                  <p class="text-muted pl-3"><small>Made by 
+                    <a href="https://www.linkedin.com/in/marinamarinkovic/" style="color:#6d757d">Marina Marinkovic</a>, 
+                    <a href="https://www.linkedin.com/in/jobrien1726/" style="color:#6d757d">Julia O'Brien</a>, & 
+                      <a href="https://www.linkedin.com/in/ashleydodge88/" style="color:#6d757d">Ashley Dodge</a>
+                    </small></p>
+
+                  <a href="https://github.com/MPdeM/Final_Project" class="ml-auto pr-3">
+                  <img src="assets/images/github_logo.png"
+                  alt="Github Icon" Title= "Github Project Repository" height="20"/> 
+                  </a>  
+
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>

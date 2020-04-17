@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Web Design Challenge</title>
+    <title>Fraudulent Job Posts</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
     <div class="row">
      <div class="col-md-12">
          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-             <a class="navbar-brand" href="index.html" ><img src="assets/images/ml_brain_logo_smallR.png" height="40" class="mr-2">Final Project</a>
+             <a class="navbar-brand" href="index.html" ><img src="assets/images/ml_brain_logo_smallR.png" height="40" class="mr-2">Fraudulent Job Posts</a>
              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
              </button>
@@ -31,12 +31,20 @@
                        Models
                      </a>
                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                       <a class="dropdown-item" href="#">Model 1</a>
-                       <a class="dropdown-item" href="#">Model 2</a>
-                       <div class="dropdown-divider"></div>
-                       <a class="dropdown-item" href="#">Model 3</a>
-                       <a class="dropdown-item" href="#">Model 4</a>
-                     </div>
+                      <div class="font-weight-bold ml-2" style="color:#248192">NLP</div>
+                       <a class="dropdown-item" href="nlp_knn.html">K Nearest Neighbors</a>
+                       <a class="dropdown-item" href="nlp_svm.html">Support Vector Machine</a>
+                       <a class="dropdown-item" href="nlp_deepLearning.html">Deep Learning</a>
+                       <a class="dropdown-item" href="nlp_naiveBayes.html">Naive Bayes</a>
+                       <a class="dropdown-item" href="nlp_randomForest.html">Random Forest</a>
+ 
+                      <div class="dropdown-divider"></div>
+ 
+                      <div class="font-weight-bold ml-2" style="color:#248192">Non-Textual ML</div>
+                       <a class="dropdown-item" href="ml_knn.html">K Nearest Neighbors</a>
+                       <a class="dropdown-item" href="ml_svm.html">Support Vector Machine</a>
+                       <a class="dropdown-item" href="ml_randomForest.html">Random Forest</a>
+                    </div>
                    </li>
                  <li class="nav-item">
                    <a class="nav-link" href="comp.html">Comparison</a>
@@ -588,11 +596,18 @@
           <div class="col-md-12">
               <hr>
               <div class="row">
-                  <p class="text-muted pl-3"><small>Made by Marina Marinkovic, Julia O'Brien, & Ashley Dodge</small></p>
+
+                  <p class="text-muted pl-3"><small>Made by 
+                    <a href="https://www.linkedin.com/in/marinamarinkovic/" style="color:#6d757d">Marina Marinkovic</a>, 
+                    <a href="https://www.linkedin.com/in/jobrien1726/" style="color:#6d757d">Julia O'Brien</a>, & 
+                      <a href="https://www.linkedin.com/in/ashleydodge88/" style="color:#6d757d">Ashley Dodge</a>
+                    </small></p>
+
                   <a href="https://github.com/MPdeM/Final_Project" class="ml-auto pr-3">
                   <img src="assets/images/github_logo.png"
                   alt="Github Icon" Title= "Github Project Repository" height="20"/> 
-                  </a>     
+                  </a>  
+
               </div>
           </div>
       </div>
