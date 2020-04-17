@@ -26,11 +26,18 @@
   tr {
       text-align: right;
   }
-
-  .carousel-item {
+/* Move carousel indicators for specific pages*/
+/* generic Classification report */
+.ml .carousel-item {
     height: 300px;
 }
 
+/* plot */
+.ml-dl .carousel-item {
+    height: 500px;
+}
+
+/* common spacing of indicators */
 .carousel-indicators {
     bottom: -25px;
 }
