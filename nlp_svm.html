@@ -32,21 +32,20 @@
                      </a>
 
                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <div class="font-weight-bold ml-2" style="color:#248192">NLP</div>
-                       <a class="dropdown-item" href="nlp_knn.html">K Nearest Neighbors</a>
-                       <a class="dropdown-item" href="nlp_svm.html">Support Vector Machine</a>
-                       <a class="dropdown-item" href="nlp_deepLearning.html">Deep Learning</a>
-                       <a class="dropdown-item" href="nlp_naiveBayes.html">Naive Bayes</a>
-                       <a class="dropdown-item" href="nlp_randomForest.html">Random Forest</a>
- 
-                      <div class="dropdown-divider"></div>
- 
-                      <div class="font-weight-bold ml-2" style="color:#248192">Non-Textual ML</div>
-                       <a class="dropdown-item" href="ml_knn.html">K Nearest Neighbors</a>
-                       <a class="dropdown-item" href="ml_svm.html">Support Vector Machine</a>
-                       <a class="dropdown-item" href="ml_randomForest.html">Random Forest</a>
-                    </div>
-
+                        <div class="font-weight-bold ml-2" style="color:#248192">NLP</div>
+                         <a class="dropdown-item" href="nlp_knn.html">K Nearest Neighbors</a>
+                         <a class="dropdown-item" href="nlp_svm.html">Support Vector Machine</a>
+                         <a class="dropdown-item" href="nlp_deepLearning.html">Deep Learning</a>
+                         <a class="dropdown-item" href="nlp_naiveBayes.html">Naive Bayes</a>
+                         <a class="dropdown-item" href="nlp_randomForest.html">Random Forest</a>
+   
+                        <div class="dropdown-divider"></div>
+   
+                        <div class="font-weight-bold ml-2" style="color:#248192">Non-Textual ML</div>
+                         <a class="dropdown-item" href="ml_knn.html">K Nearest Neighbors</a>
+                         <a class="dropdown-item" href="ml_svm.html">Support Vector Machine</a>
+                         <a class="dropdown-item" href="ml_randomForest.html">Random Forest</a>
+                      </div>
                    </li>
                  <li class="nav-item">
                    <a class="nav-link" href="comp.html">Comparison</a>
@@ -66,89 +65,89 @@
         <div class="row">  
       <!--LEFT MAIN SECTION-->
                 <div class="col-md-8">
-                    <h2>NLP: K Nearest Neighbors</h2>
+                    <h2>NLP: Support Vector Machine</h2>
                     <hr>
 
-                    <p><strong>What Is k-NN?</strong> In pattern recognition, the k-nearest neighbors algorithm (k-NN) is a non-parametric method used for classification and regression. 
-                      In both cases, the input consists of the k closest training examples in the feature space.
-                      <a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm" style="color:#248192">[Wikipedia]</a>
+                    <p><strong>What Is SVM?</strong> In machine learning, support-vector machines (SVMs, also support-vector networks[1]) are 
+                      supervised learning models with associated learning algorithms that analyze data used for classification and regression 
+                      analysis. Given a set of training examples, each marked as belonging to one or the other of two categories, an SVM training 
+                      algorithm builds a model that assigns new examples to one category or the other, making it a non-probabilistic binary linear 
+                      classifier (although methods such as Platt scaling exist to use SVM in a probabilistic classification setting).
+                    <a href="https://en.wikipedia.org/wiki/Support-vector_machine" style="color:#248192">[Wikipedia]</a>
                     </p>
-
-                    <!-- nlp_knn2_classreport.png -->
-                    <div alt="nlp_knn2_classreport.png">
-                      <h4>Classification Report: k-NN</h4>
+                    <!-- nlp_svm2_classreport.png -->
+                    <div alt="nlp_svm2_classreport.png">
+                      <h4>Classification Report: NLP SVM</h4>
                       <div class="table-responsive">
                           <table class="table table-striped table-sm">
-                            <thead class="themed-dark">
-                                    <tr>
+                          <thead class="themed-dark">
+                                  <tr>
                                       <th></th>
                                       <th>precision</th>
                                       <th>recall</th>
                                       <th>f1-score</th>
                                       <th>support</th>
-                                    </tr>
-                            </thead>
-                            <tbody>
-                               <tr>
-                                    <td><strong>Real</strong></td>
-                                    <td>0.91</td>
-                                    <td>0.95</td>
-                                    <td>0.93</td>
-                                    <td>754</td>
-                                </tr>
-                                <tr>
+                                  </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td><strong>Real</strong></td>
+                                  <td>0.90</td>
+                                  <td>0.98</td>
+                                  <td>0.94</td>
+                                  <td>748</td>
+                              </tr>
+                              <tr>
                                   <td><strong>Fake</strong></td>
-                                  <td>0.76</td>
-                                  <td>0.63</td>
-                                  <td>0.69</td>
-                                  <td>194</td>
-                                </tr>
-                                
-                                <tr>
+                                  <td>0.89</td>
+                                  <td>0.59</td>
+                                  <td>0.71</td>
+                                  <td>200</td>
+                              </tr>
+                              
+                              <tr>
                                   <td><strong>Accuracy</strong></td>
                                   <td></td>
                                   <td></td>
-                                  <td>0.89</td>
+                                  <td>0.90</td>
                                   <td>948</td>
-                                </tr>
-                                <tr>
+                              </tr>
+                              <tr>
                                   <td><strong>Macro Avg</strong></td>
-                                  <td>0.84</td>
-                                  <td>0.79</td>
-                                  <td>0.81</td>
-                                  <td>948</td>
-                                </tr>
-                                <tr>
-                                  <td><strong>Weighted Avg</strong></td>
-                                  <td>0.88</td>
                                   <td>0.89</td>
-                                  <td>0.88</td>
+                                  <td>0.79</td>
+                                  <td>0.83</td>
                                   <td>948</td>
-                                </tr>
-                            </tbody>
+                              </tr>
+                              <tr>
+                                  <td><strong>Weighted Avg</strong></td>
+                                  <td>0.90</td>
+                                  <td>0.90</td>
+                                  <td>0.89</td>
+                                  <td>948</td>
+                              </tr>
+                          </tbody>
                           </table>
                       </div>
                       </div>
-                  
 
-                    <p><strong>Train Time:</strong> 0.0022668838500976562 nanoseconds</p>
+                    <p><strong>Train Time:</strong> 1.3830008506774902 nanoseconds</p>
 
-                    <p><strong>Findings:</strong> The K Nearest Neighbors model was by far the most efficient, 
-                      but not very reliable in terms of accuracy. It took .0025 nanoseconds, exponentially less 
-                      time than the other models. However, before the hypertuning, the model had a precision score of 
-                      .73 with regard to fraudulent postings and an overall accuracy score of .86, not very impressive. 
-                      After using gridsearchCV to calculate the best parameters, the model’s accuracy increased to .89 and 
-                      it’s precision score increased to .76, but this is still quite low. I would not be confident in this 
-                      model’s ability to correctly identify a fake job posting. 
+                    <p><strong>Findings:</strong> The Support Vector Machine model ended up being quite an effective and efficient tool 
+                        for recognizing fraudulent job postings. Prior to any parameter tuning, the model was able to correctly predict a 
+                        fake job posting 93% of the time, and had an overall accuracy score of .89. After hypertuning and applying the best 
+                        parameters, the overall accuracy of the model increased slightly to .90, however the model’s precision with regard 
+                        to fake job postings decreased to .89. We are looking for the model that can correctly pinpoint fraudulent job 
+                        postings most often. Therefore, we decided to save the model as it was before any tuning of the parameters. We 
+                        chose a 1:4 sample ratio because after testing a range of sizes for the real data, this ratio allowed for a 
+                        relatively high precision score for the fraudulent classification without taking a tremendous amount of time. 
+                        When using ALL of the data available in our dataset, the Support Vector Machine model had a precision score of 
+                        .92 (lower than with less data) and an overall accuracy of .98 but it took a couple of hours to complete the 
+                        entire process. The time it took to fit the model to the training data with significantly less real data was 
+                        1.26 nanoseconds, and the entire process took only about 5-7 minutes. 
                     </p>
-                    <!-- carousel -->
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img class="d-block w-100" src="assets/images/nlp_knn2_sampleratio_plot.png" alt="k-NN Sample Plot">
-                        </div>
-                      </div>
-                    </div>
+           
+                    <img class="d-block w-100" src="assets/images/nlp_svm2_sampleratio_plot.png" alt="k-NN Sample Plot">
                     
                 </div>
         
