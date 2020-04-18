@@ -46,5 +46,35 @@
     margin-bottom: 35px;;
 }
 
+.active-page {
+    color: #248193;
+}
+
+h3 {
+    padding-top: 13px;
+}
+
+.right-side td a {
+    color: #818181;
+}
+
+.active-page {
+    color: #248193;
+}
+
+.active-nav {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.active-page td a {
+    color: #248193;
+}
+
+.model-type th{
+    color: #818181;
+}
+
+
   /* Darker blue #248193 */
   /* Lighter blue #51b4c5 */

@@ -26,7 +26,7 @@
            
              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <ul class="navbar-nav ml-auto">
-                 <li class="nav-item dropdown">
+                 <li class="nav-item dropdown active-nav">
                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                        Models
                      </a>
@@ -34,7 +34,7 @@
                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <div class="font-weight-bold ml-2" style="color:#248192">NLP</div>
                          <a class="dropdown-item" href="nlp_knn.html">K Nearest Neighbors</a>
-                         <a class="dropdown-item" href="nlp_svm.html">Support Vector Machine</a>
+                         <a class="dropdown-item active-nav" href="nlp_svm.html">Support Vector Machine</a>
                          <a class="dropdown-item" href="nlp_deepLearning.html">Deep Learning</a>
                          <a class="dropdown-item" href="nlp_naiveBayes.html">Naive Bayes</a>
                          <a class="dropdown-item" href="nlp_randomForest.html">Random Forest</a>
@@ -44,12 +44,10 @@
                         <div class="font-weight-bold ml-2" style="color:#248192">Non-Textual ML</div>
                          <a class="dropdown-item" href="ml_knn.html">K Nearest Neighbors</a>
                          <a class="dropdown-item" href="ml_svm.html">Support Vector Machine</a>
+                         <a class="dropdown-item" href="ml_deepLearning.html">Deep Learning</a>
                          <a class="dropdown-item" href="ml_randomForest.html">Random Forest</a>
                       </div>
                    </li>
-                 <li class="nav-item">
-                   <a class="nav-link" href="comp.html">Comparison</a>
-                 </li>
                  <li class="nav-item">
                    <a class="nav-link" href="data.html">Data</a>
                  </li>
@@ -75,63 +73,143 @@
                       classifier (although methods such as Platt scaling exist to use SVM in a probabilistic classification setting).
                     <a href="https://en.wikipedia.org/wiki/Support-vector_machine" style="color:#248192">[Wikipedia]</a>
                     </p>
-                    <!-- nlp_svm2_classreport.png -->
-                    <div alt="nlp_svm2_classreport.png">
-                      <h4>Classification Report: NLP SVM</h4>
-                      <div class="table-responsive">
-                          <table class="table table-striped table-sm">
-                          <thead class="themed-dark">
-                                  <tr>
-                                      <th></th>
-                                      <th>precision</th>
-                                      <th>recall</th>
-                                      <th>f1-score</th>
-                                      <th>support</th>
-                                  </tr>
-                          </thead>
-                          <tbody>
-                              <tr>
-                                  <td><strong>Real</strong></td>
-                                  <td>0.90</td>
-                                  <td>0.98</td>
-                                  <td>0.94</td>
-                                  <td>748</td>
-                              </tr>
-                              <tr>
-                                  <td><strong>Fake</strong></td>
-                                  <td>0.89</td>
-                                  <td>0.59</td>
-                                  <td>0.71</td>
-                                  <td>200</td>
-                              </tr>
-                              
-                              <tr>
-                                  <td><strong>Accuracy</strong></td>
-                                  <td></td>
-                                  <td></td>
-                                  <td>0.90</td>
-                                  <td>948</td>
-                              </tr>
-                              <tr>
-                                  <td><strong>Macro Avg</strong></td>
-                                  <td>0.89</td>
-                                  <td>0.79</td>
-                                  <td>0.83</td>
-                                  <td>948</td>
-                              </tr>
-                              <tr>
-                                  <td><strong>Weighted Avg</strong></td>
-                                  <td>0.90</td>
-                                  <td>0.90</td>
-                                  <td>0.89</td>
-                                  <td>948</td>
-                              </tr>
-                          </tbody>
-                          </table>
-                      </div>
-                      </div>
 
-                    <p><strong>Train Time:</strong> 1.3830008506774902 nanoseconds</p>
+                    <!-- carousel -->
+                    <div id="carouselExampleIndicators" class="carousel slide ml-svm" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                       <!-- nlp_svm_classreport.png -->
+                        <div alt="nlp_svm_classreport.png">
+                          <h4>Classification Report: NLP SVM</h4>
+                          <p class="font-italic">Without Paramater Tuning</p>
+                          <div class="table-responsive">
+                              <table class="table table-striped table-sm">
+                                <thead class="themed-dark">
+                                        <tr>
+                                          <th></th>
+                                          <th>precision</th>
+                                          <th>recall</th>
+                                          <th>f1-score</th>
+                                          <th>support</th>
+                                        </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                        <td><strong>Real</strong></td>
+                                        <td>0.88</td>
+                                        <td>0.99</td>
+                                        <td>0.93</td>
+                                        <td>748</td>
+                                    </tr>
+                                    <tr>
+                                      <td><strong>Fake</strong></td>
+                                      <td>0.93</td>
+                                      <td>0.51</td>
+                                      <td>0.66</td>
+                                      <td>200</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                      <td><strong>Accuracy</strong></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td>0.89</td>
+                                      <td>948</td>
+                                    </tr>
+                                    <tr>
+                                      <td><strong>Macro Avg</strong></td>
+                                      <td>0.91</td>
+                                      <td>0.75</td>
+                                      <td>0.80</td>
+                                      <td>948</td>
+                                    </tr>
+                                    <tr>
+                                      <td><strong>Weighted Avg</strong></td>
+                                      <td>0.89</td>
+                                      <td>0.89</td>
+                                      <td>0.88</td>
+                                      <td>948</td>
+                                    </tr>
+                                </tbody>
+                              </table>
+                          </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                         <!-- nlp_svm2_classreport.png -->
+                          <div alt="nlp_svm2_classreport.png">
+                            <h4>Classification Report: NLP SVM</h4>
+                            <p class="font-italic">With Parameter Tuning</p>
+                            <div class="table-responsive">
+                                <table class="table table-striped table-sm">
+                                <thead class="themed-dark">
+                                        <tr>
+                                            <th></th>
+                                            <th>precision</th>
+                                            <th>recall</th>
+                                            <th>f1-score</th>
+                                            <th>support</th>
+                                        </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Real</strong></td>
+                                        <td>0.90</td>
+                                        <td>0.98</td>
+                                        <td>0.94</td>
+                                        <td>748</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Fake</strong></td>
+                                        <td>0.89</td>
+                                        <td>0.59</td>
+                                        <td>0.71</td>
+                                        <td>200</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td><strong>Accuracy</strong></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>0.90</td>
+                                        <td>948</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Macro Avg</strong></td>
+                                        <td>0.89</td>
+                                        <td>0.79</td>
+                                        <td>0.83</td>
+                                        <td>948</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Weighted Avg</strong></td>
+                                        <td>0.90</td>
+                                        <td>0.90</td>
+                                        <td>0.89</td>
+                                        <td>948</td>
+                                    </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+
+
+                    <p><strong>Train Time:</strong> 1.38 seconds</p>
 
                     <p><strong>Findings:</strong> The Support Vector Machine model ended up being quite an effective and efficient tool 
                         for recognizing fraudulent job postings. Prior to any parameter tuning, the model was able to correctly predict a 
@@ -144,7 +222,7 @@
                         When using ALL of the data available in our dataset, the Support Vector Machine model had a precision score of 
                         .92 (lower than with less data) and an overall accuracy of .98 but it took a couple of hours to complete the 
                         entire process. The time it took to fit the model to the training data with significantly less real data was 
-                        1.26 nanoseconds, and the entire process took only about 5-7 minutes. 
+                        1.26 seconds, and the entire process took only about 5-7 minutes. 
                     </p>
            
                     <h4>Sample Plot: SVM NLP</h4>
@@ -158,34 +236,60 @@
                 </div>
         
     <!--RIGHT MAIN SECTION-->
-                <div class="col-md-4"> 
-                    <h2>Additional Models</h2>
-                    <hr>
-                <!--Model 1-->
-                <a href="##">
-                    <img src="assets/images/ml_brain.png"
-                        alt="##" Title= "##" height="175" width="175" class="figure-img img-fluid p-1 float-left"/>      
-                </a>
-
-                <!--Model 2-->
-                    <a href="##">
-                        <img src="assets/images/ml_brain.png"
-                            alt="##" Title= "##" height="175" width="175" class="figure-img img-fluid p-1 float-left"/>      
-                    </a>
-                
-                <!--Model 3-->
-                <a href="##">
-                    <img src="assets/images/ml_brain.png"
-                        alt="##" Title= "##" height="175" width="175" class="figure-img img-fluid p-1 float-left"/>      
-                </a>
-
-                <!--Model 4-->
-                <a href="##">
-                    <img src="assets/images/ml_brain.png"
-                        alt="##" Title= "##" height="175" width="175" class="figure-img img-fluid p-1 float-left"/>      
-                </a>
- 
-                </div>
+                <div class="col-md-4 right-side"> 
+                  <h3>Model Comparison</h3>
+                  
+                  <table class="table table-hover table-sm">
+                    <thead class="table">
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Model</th>
+                        <th scope="col">Precision Fake</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th class="active-page model-type" scope="row" rowspan="5">NLP</th>
+                        <td><a href="nlp_knn.html">k-NN</a></td>
+                        <td><a href="nlp_knn.html">0.76</a></td>
+                        </a>
+                      </tr>
+                      <tr class="active-page model-type">
+                        <td><a href="nlp_svm.html">SVM</a></td>
+                        <td><a href="nlp_svm.html">0.89</a></td>
+                      </tr>     
+                      <tr>
+                        <td><a href="nlp_deepLearning.html">DL</a></td>
+                        <td><a href="nlp_deepLearning.html">0.92</a></td>
+                      </tr>    
+                      <tr>
+                        <td><a href="nlp_naiveBayes.html">NB</a></td>
+                        <td><a href="nlp_naiveBayes.html">0.84</a></td>
+                      </tr>    
+                      <tr>
+                        <td><a href="nlp_randomForest.html">RF</a></td>
+                        <td><a href="nlp_randomForest.html">0.58</a></td>
+                      </tr>    
+                      <tr class="model-type">
+                        <th scope="row" rowspan="4">Non-Textual</th>
+                          <td><a href="ml_knn.html">k-NN</a></td>
+                          <td><a href="ml_knn.html">0.85</a></td>   
+                      </tr>
+                      <tr>
+                        <td><a href="ml_svm.html">SVM</a></td>
+                        <td><a href="ml_svm.html">0.84</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="ml_deepLearning.html">DL</a></td>
+                        <td><a href="ml_deepLearning.html">0.86</a></td>
+                      </tr>     
+                      <tr>
+                        <td><a href="ml_randomForest.html">RF</a></td>
+                        <td><a href="ml_randomForest.html">1.00</a></td>
+                      </tr>      
+                    </tbody>
+                  </table>
+                 </div>
 
         </div>
     </div>

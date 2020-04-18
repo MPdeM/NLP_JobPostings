@@ -26,7 +26,7 @@
            
              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <ul class="navbar-nav ml-auto">
-                 <li class="nav-item dropdown">
+                 <li class="nav-item dropdown active-nav">
                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                        Models
                      </a>
@@ -37,19 +37,17 @@
                          <a class="dropdown-item" href="nlp_svm.html">Support Vector Machine</a>
                          <a class="dropdown-item" href="nlp_deepLearning.html">Deep Learning</a>
                          <a class="dropdown-item" href="nlp_naiveBayes.html">Naive Bayes</a>
-                         <a class="dropdown-item" href="nlp_randomForest.html">Random Forest</a>
+                         <a class="dropdown-item active-nav" href="nlp_randomForest.html">Random Forest</a>
    
                         <div class="dropdown-divider"></div>
    
                         <div class="font-weight-bold ml-2" style="color:#248192">Non-Textual ML</div>
                          <a class="dropdown-item" href="ml_knn.html">K Nearest Neighbors</a>
                          <a class="dropdown-item" href="ml_svm.html">Support Vector Machine</a>
+                         <a class="dropdown-item" href="ml_deepLearning.html">Deep Learning</a>
                          <a class="dropdown-item" href="ml_randomForest.html">Random Forest</a>
                       </div>
                    </li>
-                 <li class="nav-item">
-                   <a class="nav-link" href="comp.html">Comparison</a>
-                 </li>
                  <li class="nav-item">
                    <a class="nav-link" href="data.html">Data</a>
                  </li>
@@ -131,9 +129,22 @@
                       </div>
                       </div>
 
-                    <p><strong>Train Time:</strong> 6.024529218673706 seconds</p>
+                    <p><strong>Train Time:</strong> 6.02 seconds</p>
 
-                    <p><strong>Findings:</strong> ....
+                    <p><strong>Findings:</strong> A Random Forest is a meta estimator that fits a number of decision 
+                      tree classifiers on data sub-samples improves the predictive accuracy by averaging and control over-fitting. 
+                      The algorithm has the advantage that it can be applied on non-normalized data. The training features can be 
+                      tuned and to do that we used the AUC (Area Under Curve) as the evaluation metric. 
+                      The graphs below showed the results of the parameter optimization. One aspect we took into account was that 
+                      we did not need any explainability and hence we had no limitations regarding the structure of the threes/forest. 
+                      The graphs are the optimization of the number of threes (n_estimator) and the depth (max_depth). The higher the 
+                      number the better to learn the data. However, the addition of too many threes slows down the training process. 
+                      The deeper the tree, the more splits it has and can capture more information about the data. In this case, we 
+                      fitted the data of several depths and plotted the training and test errors. The python algorithm is available on 
+                      the Git Repository. 
+                      After the parameter optimization the model took 6.02 s to train and had a precision of .58 and .93 for the 
+                      fake and real posts respectively.
+                      
                     </p>
                     <!-- carousel -->
                     <div id="carouselExampleIndicators" class="carousel slide nlp-rf" data-ride="carousel">
@@ -168,35 +179,61 @@
                     
                 </div>
         
-    <!--RIGHT MAIN SECTION-->
-                <div class="col-md-4"> 
-                    <h2>Additional Models</h2>
-                    <hr>
-                <!--Model 1-->
-                <a href="##">
-                    <img src="assets/images/ml_brain.png"
-                        alt="##" Title= "##" height="175" width="175" class="figure-img img-fluid p-1 float-left"/>      
-                </a>
-
-                <!--Model 2-->
-                    <a href="##">
-                        <img src="assets/images/ml_brain.png"
-                            alt="##" Title= "##" height="175" width="175" class="figure-img img-fluid p-1 float-left"/>      
-                    </a>
-                
-                <!--Model 3-->
-                <a href="##">
-                    <img src="assets/images/ml_brain.png"
-                        alt="##" Title= "##" height="175" width="175" class="figure-img img-fluid p-1 float-left"/>      
-                </a>
-
-                <!--Model 4-->
-                <a href="##">
-                    <img src="assets/images/ml_brain.png"
-                        alt="##" Title= "##" height="175" width="175" class="figure-img img-fluid p-1 float-left"/>      
-                </a>
- 
-                </div>
+      <!--RIGHT MAIN SECTION-->
+                <div class="col-md-4 right-side"> 
+                  <h3>Model Comparison</h3>
+                  
+                  <table class="table table-hover table-sm">
+                    <thead class="table">
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Model</th>
+                        <th scope="col">Precision Fake</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th class="active-page" scope="row" rowspan="5">NLP</th>
+                        <td><a href="nlp_knn.html">k-NN</a></td>
+                        <td><a href="nlp_knn.html">0.76</a></td>
+                        </a>
+                      </tr>
+                      <tr>
+                        <td><a href="nlp_svm.html">SVM</a></td>
+                        <td><a href="nlp_svm.html">0.89</a></td>
+                      </tr>     
+                      <tr>
+                        <td><a href="nlp_deepLearning.html">DL</a></td>
+                        <td><a href="nlp_deepLearning.html">0.92</a></td>
+                      </tr>    
+                      <tr>
+                        <td><a href="nlp_naiveBayes.html">NB</a></td>
+                        <td><a href="nlp_naiveBayes.html">0.84</a></td>
+                      </tr>    
+                      <tr class="active-page">
+                        <td><a href="nlp_randomForest.html">RF</a></td>
+                        <td><a href="nlp_randomForest.html">0.58</a></td>
+                      </tr>    
+                      <tr class="model-type">
+                        <th scope="row" rowspan="4">Non-Textual</th>
+                          <td><a href="ml_knn.html">k-NN</a></td>
+                          <td><a href="ml_knn.html">0.85</a></td>   
+                      </tr>
+                      <tr>
+                        <td><a href="ml_svm.html">SVM</a></td>
+                        <td><a href="ml_svm.html">0.84</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="ml_deepLearning.html">DL</a></td>
+                        <td><a href="ml_deepLearning.html">0.86</a></td>
+                      </tr>     
+                      <tr>
+                        <td><a href="ml_randomForest.html">RF</a></td>
+                        <td><a href="ml_randomForest.html">1.00</a></td>
+                      </tr>      
+                    </tbody>
+                  </table>
+              </div>
 
         </div>
     </div>

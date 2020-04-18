@@ -26,7 +26,7 @@
            
              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <ul class="navbar-nav ml-auto">
-                 <li class="nav-item dropdown">
+                 <li class="nav-item dropdown active-nav">
                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                        Models
                      </a>
@@ -36,7 +36,7 @@
                          <a class="dropdown-item" href="nlp_knn.html">K Nearest Neighbors</a>
                          <a class="dropdown-item" href="nlp_svm.html">Support Vector Machine</a>
                          <a class="dropdown-item" href="nlp_deepLearning.html">Deep Learning</a>
-                         <a class="dropdown-item" href="nlp_naiveBayes.html">Naive Bayes</a>
+                         <a class="dropdown-item active-nav" href="nlp_naiveBayes.html">Naive Bayes</a>
                          <a class="dropdown-item" href="nlp_randomForest.html">Random Forest</a>
    
                         <div class="dropdown-divider"></div>
@@ -44,13 +44,11 @@
                         <div class="font-weight-bold ml-2" style="color:#248192">Non-Textual ML</div>
                          <a class="dropdown-item" href="ml_knn.html">K Nearest Neighbors</a>
                          <a class="dropdown-item" href="ml_svm.html">Support Vector Machine</a>
+                         <a class="dropdown-item" href="ml_deepLearning.html">Deep Learning</a>
                          <a class="dropdown-item" href="ml_randomForest.html">Random Forest</a>
                       </div>
 
                    </li>
-                 <li class="nav-item">
-                   <a class="nav-link" href="comp.html">Comparison</a>
-                 </li>
                  <li class="nav-item">
                    <a class="nav-link" href="data.html">Data</a>
                  </li>
@@ -64,7 +62,7 @@
 <!--MAIN SECTION-->
     <div class="container pt-4">
         <div class="row">  
-      <!--LEFT MAIN SECTION-->
+        <!--LEFT MAIN SECTION-->
                 <div class="col-md-8">
                     <h2>NLP: Naive Bayes</h2>
                     <hr>
@@ -76,6 +74,7 @@
                     </p>
 
                     <hr>
+                    <p><strong>Train Time for All:</strong>  2.30 seconds </p>
 
                     <h3>Multinomial Naive Bayes</h3>
                     <!-- NB_MultinomialNBclassR_alldata.PNG -->
@@ -134,9 +133,11 @@
                             </div>
                     </div>
 
-                    <p><strong>Train Time:</strong> .... </p>
 
-                    <p><strong>Findings:</strong> ...... 
+                    <p><strong>Findings:</strong> We used the same MultinomialNB model with all the data which ran 
+                        in 2.3 seconds and had an accuracy of 0.95 but itwas unable to predict fake posts. We decided
+                        to run the ComplementNB nex to see what would happen.
+ 
                     </p>
     
                     <hr>
@@ -198,42 +199,139 @@
                         </div>
                         </div>
 
-                    <p><strong>Train Time:</strong> .... </p>
 
-                    <p><strong>Findings:</strong> ...... 
+                    <p><strong>Findings:</strong>  
+                        The ComplementNB is an adaptation of the 
+                        standard multinomial naive Bayes algorithm that is particularly suited for imbalanced data sets. 
+                        We found that with a sub-dataset that contained an equal number of fake and real posts the algorithm 
+                        run in 0.06 s, had an accuracy of 0.84 and had a precision of 0.81 for fake postings. Unfortunatley the 
+                        accuracy for the fake posts was very poor.
+                    </p>
+
+                    <hr>
+
+                    <h3>1:5 Naive Bayes</h3>
+
+                    <!-- NB_class_report_1to5.PNG -->
+                    <div alt="NB_class_report_1to5.PNG">
+                        <h4>Classification Report: 1:5 Naive Bayes</h4>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-sm">
+                            <thead class="themed-dark">
+                                    <tr>
+                                        <th></th>
+                                        <th>precision</th>
+                                        <th>recall</th>
+                                        <th>f1-score</th>
+                                        <th>support</th>
+                                    </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Real</strong></td>
+                                    <td>0.87</td>
+                                    <td>0.99</td>
+                                    <td>0.93</td>
+                                    <td>1082</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Fake</strong></td>
+                                    <td>0.84</td>
+                                    <td>0.26</td>
+                                    <td>0.40</td>
+                                    <td>216</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><strong>Accuracy</strong></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>0.87</td>
+                                    <td>1298</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Macro Avg</strong></td>
+                                    <td>0.85</td>
+                                    <td>0.63</td>
+                                    <td>0.66</td>
+                                    <td>1298</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Weighted Avg</strong></td>
+                                    <td>0.87</td>
+                                    <td>0.87</td>
+                                    <td>0.84</td>
+                                    <td>1298</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                        </div>
+
+                    <p><strong>Findings:</strong> Lastly, to compare with other models we used a subset of data with 
+                        1:5 ratio (fake:real posts). The model took 0.48 s to build, the accuracy was .84 and the 
+                        precision for the fake was .81.
+                        In conclusion, these classifiers are very fast models but very poor predictors when applied to our data set. 
+                         
                     </p>
 
 
                 </div>
         
-    <!--RIGHT MAIN SECTION-->
-                <div class="col-md-4"> 
-                    <h2>Additional Models</h2>
-                    <hr>
-                <!--Model 1-->
-                <a href="##">
-                    <img src="assets/images/ml_brain.png"
-                        alt="##" Title= "##" height="175" width="175" class="figure-img img-fluid p-1 float-left"/>      
-                </a>
-
-                <!--Model 2-->
-                    <a href="##">
-                        <img src="assets/images/ml_brain.png"
-                            alt="##" Title= "##" height="175" width="175" class="figure-img img-fluid p-1 float-left"/>      
-                    </a>
-                
-                <!--Model 3-->
-                <a href="##">
-                    <img src="assets/images/ml_brain.png"
-                        alt="##" Title= "##" height="175" width="175" class="figure-img img-fluid p-1 float-left"/>      
-                </a>
-
-                <!--Model 4-->
-                <a href="##">
-                    <img src="assets/images/ml_brain.png"
-                        alt="##" Title= "##" height="175" width="175" class="figure-img img-fluid p-1 float-left"/>      
-                </a>
- 
+        <!--RIGHT MAIN SECTION-->
+                <div class="col-md-4 right-side"> 
+                    <h3>Model Comparison</h3>
+                    
+                    <table class="table table-hover table-sm">
+                    <thead class="table">
+                        <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Model</th>
+                        <th scope="col">Precision Fake</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th class="active-page"scope="row" rowspan="5">NLP</th>
+                        <td><a href="nlp_knn.html">k-NN</a></td>
+                        <td><a href="nlp_knn.html">0.76</a></td>
+                        </a>
+                        </tr>
+                        <tr>
+                        <td><a href="nlp_svm.html">SVM</a></td>
+                        <td><a href="nlp_svm.html">0.89</a></td>
+                        </tr>     
+                        <tr>
+                        <td><a href="nlp_deepLearning.html">DL</a></td>
+                        <td><a href="nlp_deepLearning.html">0.92</a></td>
+                        </tr>    
+                        <tr class="active-page">
+                        <td><a href="nlp_naiveBayes.html">NB</a></td>
+                        <td><a href="nlp_naiveBayes.html">0.84</a></td>
+                        </tr>    
+                        <tr>
+                        <td><a href="nlp_randomForest.html">RF</a></td>
+                        <td><a href="nlp_randomForest.html">0.58</a></td>
+                        </tr>    
+                        <tr class="model-type">
+                        <th scope="row" rowspan="4">Non-Textual</th>
+                            <td><a href="ml_knn.html">k-NN</a></td>
+                            <td><a href="ml_knn.html">0.85</a></td>   
+                        </tr>
+                        <tr>
+                        <td><a href="ml_svm.html">SVM</a></td>
+                        <td><a href="ml_svm.html">0.84</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="ml_deepLearning.html">DL</a></td>
+                            <td><a href="ml_deepLearning.html">0.86</a></td>
+                        </tr>     
+                        <tr>
+                        <td><a href="ml_randomForest.html">RF</a></td>
+                        <td><a href="ml_randomForest.html">1.00</a></td>
+                        </tr>      
+                    </tbody>
+                    </table>
                 </div>
 
         </div>

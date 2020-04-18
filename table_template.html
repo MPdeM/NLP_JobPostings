@@ -281,6 +281,7 @@
 <!-- nlp_knn2_classreport.png -->
                     <div alt="nlp_knn2_classreport.png">
                         <h4>Classification Report: k-NN</h4>
+                        <p class="font-italic">With Parameter Tuning</p>
                         <div class="table-responsive">
                             <table class="table table-striped table-sm">
                               <thead class="themed-dark">
@@ -337,6 +338,7 @@
 <!-- nlp_svm2_classreport.png -->
                     <div alt="nlp_svm2_classreport.png">
                         <h4>Classification Report: NLP SVM</h4>
+                        <p class="font-italic">With Parameter Tuning</p>
                         <div class="table-responsive">
                             <table class="table table-striped table-sm">
                             <thead class="themed-dark">
@@ -843,6 +845,232 @@
               <td>0.95</td>
               <td>0.95</td>
               <td>0.93</td>
+              <td>4470</td>
+            </tr>
+        </tbody>
+      </table>
+  </div>
+  </div>
+
+  <!-- nlp_knn_classreport.png -->
+  <div alt="nlp_knn_classreport.png">
+    <h4>Classification Report: k-NN</h4>
+    <p class="font-italic">Without Parameter Tuning</p>
+    <div class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead class="themed-dark">
+                  <tr>
+                    <th></th>
+                    <th>precision</th>
+                    <th>recall</th>
+                    <th>f1-score</th>
+                    <th>support</th>
+                  </tr>
+          </thead>
+          <tbody>
+             <tr>
+                  <td><strong>Real</strong></td>
+                  <td>0.88</td>
+                  <td>0.95</td>
+                  <td>0.92</td>
+                  <td>754</td>
+              </tr>
+              <tr>
+                <td><strong>Fake</strong></td>
+                <td>0.73</td>
+                <td>0.51</td>
+                <td>0.60</td>
+                <td>194</td>
+              </tr>
+              
+              <tr>
+                <td><strong>Accuracy</strong></td>
+                <td></td>
+                <td></td>
+                <td>0.86</td>
+                <td>948</td>
+              </tr>
+              <tr>
+                <td><strong>Macro Avg</strong></td>
+                <td>0.81</td>
+                <td>0.73</td>
+                <td>0.76</td>
+                <td>948</td>
+              </tr>
+              <tr>
+                <td><strong>Weighted Avg</strong></td>
+                <td>0.85</td>
+                <td>0.86</td>
+                <td>0.85</td>
+                <td>948</td>
+              </tr>
+          </tbody>
+        </table>
+    </div>
+    </div>
+
+<!-- nlp_svm_classreport.png -->
+<div alt="nlp_svm_classreport.png">
+  <h4>Classification Report: NLP SVM</h4>
+  <p class="font-italic">Without Paramater Tuning</p>
+  <div class="table-responsive">
+      <table class="table table-striped table-sm">
+        <thead class="themed-dark">
+                <tr>
+                  <th></th>
+                  <th>precision</th>
+                  <th>recall</th>
+                  <th>f1-score</th>
+                  <th>support</th>
+                </tr>
+        </thead>
+        <tbody>
+           <tr>
+                <td><strong>Real</strong></td>
+                <td>0.88</td>
+                <td>0.99</td>
+                <td>0.93</td>
+                <td>748</td>
+            </tr>
+            <tr>
+              <td><strong>Fake</strong></td>
+              <td>0.93</td>
+              <td>0.51</td>
+              <td>0.66</td>
+              <td>200</td>
+            </tr>
+            
+            <tr>
+              <td><strong>Accuracy</strong></td>
+              <td></td>
+              <td></td>
+              <td>0.89</td>
+              <td>948</td>
+            </tr>
+            <tr>
+              <td><strong>Macro Avg</strong></td>
+              <td>0.91</td>
+              <td>0.75</td>
+              <td>0.80</td>
+              <td>948</td>
+            </tr>
+            <tr>
+              <td><strong>Weighted Avg</strong></td>
+              <td>0.89</td>
+              <td>0.89</td>
+              <td>0.88</td>
+              <td>948</td>
+            </tr>
+        </tbody>
+      </table>
+  </div>
+  </div>
+
+<!-- NB_class_report_1to5.PNG -->
+<div alt="NB_class_report_1to5.PNG">
+  <h4>Classification Report: 1:5 Naive Bayes</h4>
+  <div class="table-responsive">
+      <table class="table table-striped table-sm">
+        <thead class="themed-dark">
+                <tr>
+                  <th></th>
+                  <th>precision</th>
+                  <th>recall</th>
+                  <th>f1-score</th>
+                  <th>support</th>
+                </tr>
+        </thead>
+        <tbody>
+           <tr>
+                <td><strong>Real</strong></td>
+                <td>0.87</td>
+                <td>0.99</td>
+                <td>0.93</td>
+                <td>1082</td>
+            </tr>
+            <tr>
+              <td><strong>Fake</strong></td>
+              <td>0.84</td>
+              <td>0.26</td>
+              <td>0.40</td>
+              <td>216</td>
+            </tr>
+            
+            <tr>
+              <td><strong>Accuracy</strong></td>
+              <td></td>
+              <td></td>
+              <td>0.87</td>
+              <td>1298</td>
+            </tr>
+            <tr>
+              <td><strong>Macro Avg</strong></td>
+              <td>0.85</td>
+              <td>0.63</td>
+              <td>0.66</td>
+              <td>1298</td>
+            </tr>
+            <tr>
+              <td><strong>Weighted Avg</strong></td>
+              <td>0.87</td>
+              <td>0.87</td>
+              <td>0.84</td>
+              <td>1298</td>
+            </tr>
+        </tbody>
+      </table>
+  </div>
+  </div>
+
+<!-- nontext_dl_classreport.png -->
+<div alt="nontext_dl_classreport.png">
+  <h4>Classification Report: Non-Textual ML</h4>
+  <div class="table-responsive">
+      <table class="table table-striped table-sm">
+        <thead class="themed-dark">
+                <tr>
+                  <th></th>
+                  <th>precision</th>
+                  <th>recall</th>
+                  <th>f1-score</th>
+                  <th>support</th>
+                </tr>
+        </thead>
+        <tbody>
+           <tr>
+                <td><strong>Real</strong></td>
+                <td>0.98</td>
+                <td>1.00</td>
+                <td>0.99</td>
+                <td>4251</td>
+            </tr>
+            <tr>
+              <td><strong>Fake</strong></td>
+              <td>0.86</td>
+              <td>0.55</td>
+              <td>0.67</td>
+              <td>219</td>
+            </tr>
+            
+            <tr>
+              <td><strong>Micro Avg</strong></td>
+              <td>0.97</td>
+              <td>0.97</td>
+              <td>0.97</td>
+              <td>4470</td>
+            </tr>
+            <tr>
+              <td><strong>Macro Avg</strong></td>
+              <td>0.92</td>
+              <td>0.77</td>
+              <td>0.83</td>
+              <td>4470</td>
+            </tr>
+            <tr>
+              <td><strong>Weighted Avg</strong></td>
+              <td>0.97</td>
+              <td>0.97</td>
+              <td>0.97</td>
               <td>4470</td>
             </tr>
         </tbody>
