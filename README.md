@@ -55,9 +55,9 @@ This data set is imbalance and we choose a ratio based on the performance of the
 Different models were applied to some of the features of the non-textual 
 
 
-# ----------------------------------
-# Check out our published [GitSite](https://mpdem.github.io/Final_Project/) for a complete look at our findings!
-# ----------------------------------
+# -----------------------------------------------------
+## Check out our published [GitSite](https://mpdem.github.io/Final_Project/) for a complete look at our findings!
+# -----------------------------------------------------
 
 
 
@@ -68,6 +68,7 @@ Website Development, AWS Storage, Visualizations & Project Management
 ## Back End
 Data Research, Cleanup, Analysis, NLP Machine Learning & Visualizations
 * Marina Marinkovic: [LinkedIn](https://www.linkedin.com/in/marinamarinkovic/) | [GitHub](https://github.com/MPdeM)
+
 * Julia O'Brien: [LinkedIn](https://www.linkedin.com/in/jobrien1726/) | [GitHub](https://github.com/jobrien1726)
 
 
