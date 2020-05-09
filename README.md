@@ -31,14 +31,9 @@ Web Development:
 
 ![](assets/images/NLPMLrepresentation.PNG)
 
-## DATA
-Dataset is freele available at Kaggle [Kaggle](https://www.kaggle.com/shivamb/real-or-fake-fake-jobposting-prediction/version/1). 
-
-## DATA ANALYSIS 
-
+# ML, NLP
 ## 1 Data Pre-process
-
-Data was loaded Jupyter or CoLab and was cleaned. The data was uploaded to S3 bucket.
+Dataset is freele available at Kaggle [Kaggle](https://www.kaggle.com/shivamb/real-or-fake-fake-jobposting-prediction/version/1). Data was loaded Jupyter or CoLab and was cleaned. The data was uploaded to S3 bucket.
 ## 2 Feature Extraction: 
 Once cleaned, we will focus on the "description" to do the text analysis. The text is transformed into numerical feature vectors using [Bag of Words](https://en.wikipedia.org/wiki/Bag-of-words_model) and [Term frequency and Inverse Document Frequency, TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf). 
 
