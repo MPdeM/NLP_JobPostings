@@ -56,7 +56,8 @@ Different models were applied to some of the features of the non-textual
 
 
 # ----------------------------------
-Check out our published [GitSite](https://mpdem.github.io/Final_Project/) for a complete look at our findings!
+# Check out our published [GitSite](https://mpdem.github.io/Final_Project/) for a complete look at our findings!
+# ----------------------------------
 
 
 
@@ -71,4 +72,3 @@ Data Research, Cleanup, Analysis, NLP Machine Learning & Visualizations
 
 
 
-# I hope you enjoy as much as we do with data!!
