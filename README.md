@@ -28,8 +28,8 @@ Web Development:
 - JavaScript 
 - HTML
 - CSS
-s
-![](assets/images/NLPMLrepresentaation.PNG)
+
+![](assets/images/NLPMLrepresentation.PNG)
 
 ### DATA
 Dataset is freele available at Kaggle Kaggle [Kaggle](https://www.kaggle.com/shivamb/real-or-fake-fake-jobposting-prediction/version/1) . The data was cleaned and uploaded to S3 bucket. 
