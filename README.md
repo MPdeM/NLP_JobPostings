@@ -2,7 +2,7 @@
 
 ![](assets/images/title.PNG)
 
-This project is focused on text classification which is one of the applications of supervised ML. Our aim was to use Natural Language Processing (NLP) along with other Machine Learning (ML) approaches to differentiate fraudulent job postings from real ones. We used a dataset of real and fake job postings from Kaggle [Kaggle](https://www.kaggle.com/shivamb/real-or-fake-fake-jobposting-prediction/version/1) with textual and non textual information. 
+This project is focused on text classification which is one of the applications of supervised ML. Our aim was to use Natural Language Processing (NLP) along with other Machine Learning (ML) approaches to differentiate fraudulent job postings from real ones. We used a dataset of real and fake job postings from [Kaggle](https://www.kaggle.com/shivamb/real-or-fake-fake-jobposting-prediction/version/1) with textual and non textual information. 
 
 We created a website to display some features of the different machine learning models we used.
 
