@@ -7,7 +7,8 @@ This project is focused on text classification which is one of the applications 
 We created a website to display some features of the different machine learning models we used.
 
 ## PROBLEM: 
-Given the current job market environment, it is important to spot fake job posts. we wanted to create a model that was able to predict which job description was real or fraudulent from the > 17K posts and identify insights from this particular data set. 
+Given the current job market environment, it is important to spot fake job posts. We wanted to choose a ML model able to predict which job description was real or fraudulent from the > 17K posts and identify insights from this particular data set.
+
 ### Requirements 
 
 The main requirements for NLP are listed below:
@@ -32,6 +33,8 @@ Web Development:
 ![](assets/images/NLPMLrepresentation.PNG)
 
 # ML, NLP
+
+
 ## 1 Data Pre-process
 Dataset is freely available at [Kaggle](https://www.kaggle.com/shivamb/real-or-fake-fake-jobposting-prediction/version/1). The data was uploaded to S3 bucket and was loaded Jupyter or CoLab for cleaning and further analysis.
 ## 2 Feature Extraction: 
