@@ -64,10 +64,10 @@ Website Development, AWS Storage, Visualizations & Project Management
 * Ashley Dodge: [LinkedIn](https://www.linkedin.com/in/ashleydodge88/) | [GitHub](https://github.com/adodge88)
 
 ## Back End
-Data Research, Cleanup, Analysis, NLP Machine Learning & Visualizations
-* Marina Marinkovic: [LinkedIn](https://www.linkedin.com/in/marinamarinkovic/) | [GitHub](https://github.com/MPdeM)
-
+Data Research, Cleanup, Analysis, NLP Machine Learning & Visualization
 * Julia O'Brien: [LinkedIn](https://www.linkedin.com/in/jobrien1726/) | [GitHub](https://github.com/jobrien1726)
+
+* Marina Marinkovic: [LinkedIn](https://www.linkedin.com/in/marinamarinkovic/) | [GitHub](https://github.com/MPdeM) 
 
 
 
